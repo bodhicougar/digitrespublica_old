@@ -37,7 +37,7 @@ const Index = ({ data }) => {
 >>>>>>> Erste Änderung
 =======
       <Header title="Home Page">
-        Die Digitale res publica - Wir und die Wolke!
+        "Die Digitale res publica - Wir und die Wolke!"
       </Header>
 >>>>>>> Zrappa
       <PostWrapper>
