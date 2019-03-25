@@ -26,10 +26,14 @@ const Index = ({ data }) => {
     <Layout>
       <Helmet title={'Home Page'} />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Header title="Wir und die Wolke">Die digitale res publica</Header>
 =======
       <Header title="Home Page">Gatsby Tutorial Starter</Header>
 >>>>>>> Second commit
+=======
+      <Header title="Home Page">Die Digitale res publica - Alles Wolke!</Header>
+>>>>>>> Erste Änderung
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
