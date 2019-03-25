@@ -24,7 +24,7 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
+      <Helmet title={'Startseite'} />
       <Header title="Wir & die 'Wolke'">Die digitale res publica</Header>
       <PostWrapper>
         {edges.map(({ node }) => (
