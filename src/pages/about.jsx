@@ -7,7 +7,7 @@ import { Layout, Container } from 'layouts';
 const About = center => (
   <Layout>
     <Helmet title={'About Page'} />
-    <Header title="Über dieses Projekt">Digitale res publica</Header>
+    <Header title="Über dieses Projekt">Die digitale res publica</Header>
     <Container center={center}>
       <h3>
         If you would like to build this site completely from scratch, you can
