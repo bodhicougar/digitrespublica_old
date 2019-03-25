@@ -3,12 +3,12 @@
   "author": "Walter O. Achammer",
   "title": "Digitale res publica",
   "description": "Blog: Wir und die Wolke",
-  "homepage": "https://digitrespublica.netlify.com/",
+  "homepage": "https://digitrespublica.netlify.com",
   "license": "MIT",
   "version": "0.0.7",
   "repository": {
     "type": "git",
-    "url": "https://digitrespublica.netlify.com/"
+    "url": "https://github.com/bodhicougar/digitrespublica"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -67,6 +67,7 @@
   },
   "keywords": [
     "walter achammer",
+    "bodhicougar",
     "personal blog",
     "tutorial",
     "gatsby",
