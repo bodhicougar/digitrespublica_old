@@ -11,7 +11,7 @@ const Blog = ({ data }) => {
     <Layout>
       <Helmet title={'Blog Page'} />
 <<<<<<< HEAD
-      <Header title="Blog Page">Die digitale res publica</Header>
+      <Header title="Blog Digitale res publica">Die digitale res publica</Header>
 =======
       <Header title="Blog Page">Gatsby Tutorial Starter</Header>
 >>>>>>> Second commit
