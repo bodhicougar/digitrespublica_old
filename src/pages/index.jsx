@@ -27,6 +27,7 @@ const Index = ({ data }) => {
       <Helmet title={'Home Page'} />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Header title="Wir und die Wolke">Die digitale res publica</Header>
 =======
       <Header title="Home Page">Gatsby Tutorial Starter</Header>
@@ -34,6 +35,11 @@ const Index = ({ data }) => {
 =======
       <Header title="Home Page">Die Digitale res publica - Alles Wolke!</Header>
 >>>>>>> Erste Änderung
+=======
+      <Header title="Home Page">
+        Die Digitale res publica - Wir und die Wolke!
+      </Header>
+>>>>>>> Zrappa
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
