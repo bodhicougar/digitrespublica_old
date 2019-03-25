@@ -25,7 +25,11 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
+<<<<<<< HEAD
       <Header title="Wir und die Wolke">Die digitale res publica</Header>
+=======
+      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+>>>>>>> Second commit
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList

@@ -7,7 +7,11 @@ import { Layout, Container } from 'layouts';
 const About = center => (
   <Layout>
     <Helmet title={'About Page'} />
+<<<<<<< HEAD
     <Header title="Über dieses Projekt">Die digitale res publica</Header>
+=======
+    <Header title="About Page">Gatsby Tutorial Starter</Header>
+>>>>>>> Second commit
     <Container center={center}>
       <h3>
         If you would like to build this site completely from scratch, you can
