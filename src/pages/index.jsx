@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Home Page">Die digitale res publica</Header>
+      <Header title="Wir und die Wolke">Die digitale res publica</Header>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
