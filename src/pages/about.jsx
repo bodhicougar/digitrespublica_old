@@ -6,7 +6,7 @@ import { Layout, Container } from 'layouts';
 
 const About = center => (
   <Layout>
-    <Helmet title={'Über was Seite'} />
+    <Helmet title={'Über die digitale res publica'} />
     <Header title="Über dieses Projekt">Die digitale res publica</Header>
     <Container center={center}>
       <h3>

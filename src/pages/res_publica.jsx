@@ -1,50 +1,34 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from '@emotion/styled';
-import { Header, PostList } from 'components';
+import PropTypes from 'prop-types';
+import { Header, BlogList } from 'components';
 import { Layout } from 'layouts';
 
-const PostWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 4rem 4rem 1rem 4rem;
-  @media (max-width: 1000px) {
-    margin: 4rem 2rem 1rem 2rem;
-  }
-  @media (max-width: 700px) {
-    margin: 4rem 1rem 1rem 1rem;
-  }
-`;
-
-const Index = ({ data }) => {
+const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Startseite'} />
-      <Header title="Wir & die 'Wolke'">Die digitale res publica</Header>
-      <PostWrapper>
-        {edges.map(({ node }) => (
-          <PostList
-            key={node.id}
-            cover={node.frontmatter.cover.childImageSharp.fluid}
-            path={node.frontmatter.path}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            excerpt={node.excerpt}
-          />
-        ))}
-      </PostWrapper>
+      <Helmet title={'res publica Seite'} />
+      <Header title="Was ist mit res publica gemeint?">Die digitale res publica</Header>
+      {edges.map(({ node }) => (
+        <BlogList
+          key={node.id}
+          cover={node.frontmatter.cover.childImageSharp.fluid}
+          path={node.frontmatter.path}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          tags={node.frontmatter.tags}
+          excerpt={node.excerpt}
+        />
+      ))}
     </Layout>
   );
 };
 
-export default Index;
+export default Blog;
 
-Index.propTypes = {
+Blog.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -67,19 +51,16 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      limit: 6
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
-          excerpt(pruneLength: 75)
+          excerpt(pruneLength: 200)
           frontmatter {
             title
             path
             tags
-            date(formatString: "DD.MM.YYYY")
+            date(formatString: "MM.DD.YYYY")
             cover {
               childImageSharp {
                 fluid(
