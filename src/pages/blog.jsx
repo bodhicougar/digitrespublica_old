@@ -10,11 +10,7 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Blog Page'} />
-<<<<<<< HEAD
       <Header title="Blog Digitale res publica">Die digitale res publica</Header>
-=======
-      <Header title="Blog Page">Gatsby Tutorial Starter</Header>
->>>>>>> Second commit
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}

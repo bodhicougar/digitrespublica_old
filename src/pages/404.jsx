@@ -10,17 +10,10 @@ const ErrorPage = center => (
     <Helmet title={'404'} />
     <Header title="404" />
     <Container center={center}>
-<<<<<<< HEAD
       <h1>Hurz, etwas hat da nicht funktioniert.</h1>
       <h3>Diese Seite existiert nicht mehr oder kann nicht mehr geöffnet werden.</h3>
       <h3>
         Sie können mit Klick hier zurückgelangen <Link to="/">Homepage</Link>.
-=======
-      <h1>Woops, something went wrong.</h1>
-      <h3>This page does not exist or is no longer reachable.</h3>
-      <h3>
-        You can return to the <Link to="/">Homepage</Link>.
->>>>>>> Second commit
       </h3>
     </Container>
   </Layout>
