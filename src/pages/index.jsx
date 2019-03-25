@@ -28,7 +28,7 @@ const Index = ({ data }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-      <Header title="Wir und die Wolke">Die digitale res publica</Header>
+      <Header title="Wir & die 'Wolke'">Die digitale res publica</Header>
 =======
       <Header title="Home Page">Gatsby Tutorial Starter</Header>
 >>>>>>> Second commit
